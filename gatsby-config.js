@@ -16,7 +16,7 @@ module.exports = {
         background_color: `#675454`,
         theme_color: `#675454`,
         display: `minimal-ui`,
-        icon: `src/images/takeshape-icon.png`,
+        icon: `src/images/android-chrome-192x192.png`,
       },
     },
     {
