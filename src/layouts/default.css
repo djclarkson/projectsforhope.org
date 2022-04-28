@@ -92,7 +92,7 @@ body::after {
   }
 
   .main {
-    border-top: 1px solid #999;
+    border-top: 1px solid #675454;
     padding: 1em;
   }
 
@@ -107,12 +107,12 @@ body::after {
 }
 
 a {
-  color: #666;
+  color: #675454;
   text-decoration: none;
 }
 
 a:hover {
-  color: #675454;
+  color: #351F1F;
 }
 
 ul.nostyle {
