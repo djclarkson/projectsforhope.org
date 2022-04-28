@@ -206,11 +206,12 @@ a:hover .social-network-icon {
 }
 
 .project-list--entry .project__name {
-  color: #1d1d1d;
+  color: #675454;
+  
 }
 
 .project-list--entry:hover .project__name {
-  color: #442ab9;
+  color: #351F1F;
 }
 
 .project-list--entry .project img {
