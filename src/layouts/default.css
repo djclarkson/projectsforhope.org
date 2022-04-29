@@ -182,6 +182,21 @@ a:hover .social-network-icon {
   margin: 1.5rem 0;
 }
 
+.project__image {
+  width: 100%;
+}
+
+.project-list__title {
+  display: flex;
+}
+
+.project__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .project__name {
   margin: 0;
 }
@@ -207,7 +222,7 @@ a:hover .social-network-icon {
 
 .project-list--entry .project__name {
   color: #675454;
-  
+
 }
 
 .project-list--entry:hover .project__name {
@@ -224,25 +239,42 @@ a:hover .social-network-icon {
   display: inline-block;
 }
 
-.project__metadata {
+.project__metainfo {
   display: flex;
+  flex-direction: row-reverse;
+}
+
+.project__metadata {
+  margin: 0 0 0 10px;
   font-family: monospace, sans-serif;
 }
 
-.project__metadata > * {
+.project__metalink {
+  margin: 0;
+  font-family: monospace, sans-serif;
+}
+
+.project__metalink::before {
+  content: '/';
+  color: #999;
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+/* .project__metadata>* {
   margin: 0.25em;
 }
 
-.project__metadata > *::after {
+.project__metadata>*::after {
   content: '/';
   color: #999;
   display: inline-block;
   margin-left: 0.5em;
 }
 
-.project__metadata > *:last-child::after {
+.project__metadata>*:last-child::after {
   content: none;
-}
+} */
 
 .project__cover-image {
   max-width: 100%;
@@ -259,4 +291,12 @@ a:hover .social-network-icon {
   float: left;
   margin: 0 2em 1em 0;
   border-radius: 9999px;
+}
+
+.project__description p a {
+  overflow-wrap: anywhere;
+}
+
+.left.small img {
+  width: 100%;
 }

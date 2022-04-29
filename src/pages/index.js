@@ -1,10 +1,10 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../layouts/default'
 import ProjectList from '../components/ProjectList'
 
-const IndexPage = ({data}) => (
+const IndexPage = ({ data }) => (
   <Layout>
     <ProjectList projects={data.takeshape.projects} className="main" />
   </Layout>
@@ -22,8 +22,8 @@ export const query = graphql`
           coverImage {
             description
             path
-            fixed(width: 300, height: 200) {
-              ...GatsbyTakeShapeImageFixed
+            fluid(maxWidth: 500, maxHeight: 300) {
+              ...GatsbyTakeShapeImageFluid
             }
           }
         }
